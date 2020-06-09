@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
 export default class LinkEditable extends Component {
-
+  
+  /* Manage how links are opened */
   goToLink = () => {
     const { info, mode } = this.props
     if(mode !== "view") return

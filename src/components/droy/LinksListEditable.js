@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import LinkEditable from './LinkEditable'
 
 export default class LinksListEditable extends Component {
+
+  /* It shows all the links that the user has */
   showLinks = () => {
     const { mode, info, openChangeModal, linksStyle} = this.props
     const allLinks = []

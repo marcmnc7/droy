@@ -2,11 +2,13 @@ import React, { Component } from 'react'
 
 export default class ImageEditable extends Component {
 
+  /* Controls if the user can upload the image */
   uploadHandler = () => {
     if(this.props.mode === 'view') return
     this.refs.imageUploader.click();
   }
 
+  /* Upload an alternative photo when an error has occurred */
   handleError = (e) => {
     e.target.src = '/img/notFound.jpg'
   }

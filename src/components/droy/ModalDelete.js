@@ -11,12 +11,14 @@ export default class ModalDelete extends Component {
     }
   }
 
+  /* Catch form information and set it on the state */
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
     });
   }
 
+  /* Delete the project in frontend and backend */
   handleDelete = async (e) => {
     try {
       e.preventDefault()

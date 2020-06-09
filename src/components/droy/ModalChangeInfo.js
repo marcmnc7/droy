@@ -10,6 +10,7 @@ export default class ModalChangeInfo extends Component {
     }
   }
 
+  /* Catch link information and set it on the state */
   handleChangeNormal = (e) => {
     const infoCopy = { ...this.state.info }
     infoCopy[e.target.name] = e.target.name === "toNewPage" ? e.target.checked : e.target.value
@@ -18,6 +19,7 @@ export default class ModalChangeInfo extends Component {
     });
   }
 
+  /* Catch style information and set it on the state */
   handleChangeStyle = (e) => {
     const infoCopy = { ...this.state.style }
     infoCopy[e.target.name] = e.target.value
@@ -26,6 +28,7 @@ export default class ModalChangeInfo extends Component {
     });
   }
 
+  /* Form validations */
   isValid = (info) => {
     const pxRemRegex = /^(\d{0,3}\.?\d{0,3})(px|rem)$/
     const linkRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)/
@@ -49,7 +52,7 @@ export default class ModalChangeInfo extends Component {
     return true
   }
 
-
+  /* Change the current info for new user info */
   submitChanges = (e) => {
     e.preventDefault()
     const { changeInfo } = this.props

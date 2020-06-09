@@ -21,6 +21,7 @@ class ComponentsSelectorBar extends Component {
     }
   }
 
+  /* Get project components to BBDD based on the projectStyle */
   componentDidMount = async () => {
     try {
       const { projectStyle } = this.props
@@ -31,6 +32,7 @@ class ComponentsSelectorBar extends Component {
     }
   }
 
+  /* Show all active components with its specific info */
   showComponents = () => {
     const usedCompIds = this.props.userLayoutObj.map(c => c.code)
     const { styleComponents } = this.state
@@ -49,6 +51,7 @@ class ComponentsSelectorBar extends Component {
     })
   }
 
+  /* Add component to user ComponentBase */
   handleAddComponent = (e) => {
     const { addComponent } = this.props
     const { styleComponents } = this.state

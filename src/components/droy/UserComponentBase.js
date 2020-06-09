@@ -73,7 +73,6 @@ class UserComponentBase extends Component {
     let newAttr = ''
     if(!linksIds.length) newAttr = 'link1'
     else newAttr = `link${Math.max(...linksIds)+1}`
-    // Cambiar link por default a pagina de quienes somos de Droy
     const newInfo = { style: { fontSize: '1rem', letterSpacing: 'inherit', backgroundColor: '#9b9b9b' }, type: 'listLink', text: "New link", href: 'http://www.droy-prod.web.app', toNewPage:true}
     saveComponentInfoToContext(code, newAttr, newInfo)
   }

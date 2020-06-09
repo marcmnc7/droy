@@ -33,6 +33,7 @@ class NavBar extends Component {
     this.setState({ modalDeploy: false })
   }
 
+  /* Show modal deploy and send the request to the backend */
   deployApp = async () => {
     const { projectId } = this.props
     await api.get(`/projects/${projectId}/deploy`)
@@ -41,17 +42,20 @@ class NavBar extends Component {
     })
   }
 
+  /* Save the project */
   handleSave = () => {
     const { projectId, save } = this.props
     save(projectId)
   }
 
+  /* Logout of the tool */
   handleLogout = async () => {
     const { history } = this.props
     await firebase.auth().signOut()
     history.push('/login')
   }
 
+  /* Control publish button functionality */
   showPublishButton = () => {
     const { userLayoutObj } = this.props
     if (userLayoutObj && !userLayoutObj.length) {
@@ -60,6 +64,7 @@ class NavBar extends Component {
     return <button className='buttons-navBar' onClick={this.deployApp}>Publish</button>
   }
 
+  /* Control edit/view button functionality */
   showEditViewButton = () => {
     const { mode, switchMode, userLayoutObj } = this.props
     if (mode === 'view') {
@@ -71,6 +76,7 @@ class NavBar extends Component {
     return <button className='buttons-navBar' onClick={switchMode}>Preview</button>
   }
 
+  /* Control login/signup button functionality */
   showButtonLoginSignup = () => {
     const { currentUser } = firebase.auth()
     const { path } = this.props.match

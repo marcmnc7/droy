@@ -14,6 +14,7 @@ class ModalStartProject extends Component {
     }
   }
 
+  /* Catch form information and set it on the state */
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value

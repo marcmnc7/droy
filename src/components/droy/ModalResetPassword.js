@@ -12,12 +12,14 @@ class ModalResetPassword extends Component {
     }
   }
 
+  /* Catch form information and set it on the state */
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
     });
   }
 
+  /* Send a reset instructions to user mail */
   handleSubmit = async (e) => {
     e.preventDefault()
     const { onClose } = this.props

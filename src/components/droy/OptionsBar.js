@@ -14,27 +14,32 @@ class OptionsBar extends Component {
     }
   }
 
+  /* Catch input hex information and set it on the state */
   handleAcceptChangeColor = () => {
     this.props.changeColor(this.state.color.hex)
   }
 
+  /* Move component to another position */
   handleMoveComponent = (e) => {
     const { moveComponent, code } = this.props
     const { value: action } = e.target.attributes['data-action']
     moveComponent(code, action)
   }
 
+  /* Delete component from UserComponentBase */
   handleDelete = () => {
     const { code, deleteComponent } = this.props
     deleteComponent(code)
   }
 
+  /* Catch input information and set it on the state */
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
     })
   }
 
+  /* Catch input height information and set it on the state */
   handleChangeHeight = (e) => {
     const { changeHeight } = this.props
     this.setState({
@@ -44,6 +49,7 @@ class OptionsBar extends Component {
     })
   }
 
+  /* Sum height */
   handleSumHeight = (e) => {
     const { changeHeight } = this.props
     const resultSum = parseInt(this.state.height) + 5
@@ -54,6 +60,7 @@ class OptionsBar extends Component {
     })
   }
 
+  /* Substract height */
   handleSubHeight = (e) => {
     const { changeHeight } = this.props
     const resultSum = parseInt(this.state.height) - 5
@@ -71,12 +78,14 @@ class OptionsBar extends Component {
     })
   }
 
+  /* Show to user the color picker */
   toggleColorPicker = () => {
     this.setState({
       showColorPicker: !this.state.showColorPicker
     })
   }
 
+  /* Set color to the state */
   handleChangeColor = (color) => {
     this.setState({
       color: color
