@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import api from '../../services/apiClient'
 import firebase from '../../services/firebase'
 import { notifyError, notifyInfo } from '../../services/notifications'
+import PropTypes from 'prop-types'
 
 export default class ModalDelete extends Component {
   constructor(props) {
@@ -64,4 +65,9 @@ export default class ModalDelete extends Component {
       </div>
     )
   }
+}
+
+ModalDelete.propTypes = {
+  onClose: PropTypes.func,
+  project: PropTypes.object
 }

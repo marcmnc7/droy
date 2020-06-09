@@ -23,7 +23,6 @@ class ApiClient {
   delete (endpoint, data) {
     return this.apiClient.delete(endpoint, data)
   }
-
 }
 
 const apiClient = new ApiClient()

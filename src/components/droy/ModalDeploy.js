@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { FacebookIcon, FacebookShareButton, LinkedinIcon, LinkedinShareButton, PinterestIcon, PinterestShareButton, TwitterIcon, TwitterShareButton, WhatsappIcon, WhatsappShareButton } from 'react-share'
+import PropTypes from 'prop-types'
 
 export default class ModalDeploy extends Component {
   render () {
@@ -25,4 +26,9 @@ export default class ModalDeploy extends Component {
       </div>
     )
   }
+}
+
+ModalDeploy.propTypes = {
+  onClose: PropTypes.func,
+  projectId: PropTypes.object
 }

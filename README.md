@@ -1,12 +1,10 @@
 # 🛠 DROY
 
-
 ## What is DROY?
+
 Online tool that allows you to build your own website without having programming knowledge.
 
-![](public/img/cover-readme.gif)
-
-* * *
+![Readme Cover](public/img/cover1-readme.gif)
 
 ## 👩🏻‍💻👨🏻‍💻 User Stories 
 
@@ -19,7 +17,7 @@ Online tool that allows you to build your own website without having programming
 * In the builder page, the user has three available modes: edit, preview and publish.
 * The user can see a 404 and 5 ** controlled page.
 
-![](public/img/gif1-readme.gif)
+![Login gif](public/img/gif1-readme.gif)
 
   - **Edit Mode**:
     - The user can add a component to the user's web page, through a lateral menu that shows all the specific components             available for this theme. To include a component, the user has to add it using the + button. The component is included         in the last position.
@@ -28,7 +26,7 @@ Online tool that allows you to build your own website without having programming
     - The user can remove a component.
     - The user can save his project 
     
- ![](public/img/gif2-readme.gif)
+ ![Edit gif](public/img/gif2-readme.gif)
  
   - **Preview Mode**:
     - It's used so that the user can view his page without distractions.
@@ -36,16 +34,13 @@ Online tool that allows you to build your own website without having programming
     - Block all editing functionality of a component (delete, edit, change position).    
     - Links work according to the attributes that we've given them in edit mode.
     
-![](public/img/gif3-readme.gif)
+![Publish gif](public/img/gif3-readme.gif)
 
-   - **Publish Mode**:
+   - **Publish webpage**:
       - The user decides to publish their website and make it visible for everybody.
       - We generate a first level url.
       - The user can share the url to their contacts and even set their own domain
           
-
-* * *
-
 ## 🔜 Backlog 
 
 * The user can add a component to a specific position on their web page by drag and drop, and not by using the + button.
@@ -55,8 +50,6 @@ Online tool that allows you to build your own website without having programming
 * The user not only has two basic styles to choose when his create a new project.
 * The tool creates responsive web pages.
 
-* * *
-
 ## ✍🏻 Project Routes
 
 | Routes | Description |
@@ -65,28 +58,25 @@ Online tool that allows you to build your own website without having programming
 | /signup | Page where the user can signup |
 | /login | Page where the user can login |
 | / | Displays the main page where the user can start a project. | 
-| /builder/_id | It allows the user to build / edit / view / publish their website. |
-
-* * *
+| /builder/:id | It allows the user to build / edit / view / publish their website. |
 
 ## ⚡️Demo 
 
 [A demo is worth a thousand words](https://droy-prod.web.app/about)
-
-* * *
 
 ## Contribute
 
 Show your ❤️ and support by giving a ⭐. 
 Any suggestions are welcome!
 
-* * *
-
 ## Links
 
 [Link to Trello](https://trello.com/b/Krfo4Qp5/droy)
 
-[Github](https://github.com/marcmnc7/droy)
+[Droy](https://github.com/marcmnc7/droy)
 
-[Presentación](https://docs.google.com/presentation/d/1uFGmgLAgxeSe85KBZDAyAb9DgJ9LqC1k4Wlm6_MQMug/edit#slide=id.p)
+[Droy-API](https://github.com/marcmnc7/droy-api)
 
+[Droy-Deploy](https://github.com/marcmnc7/droy-deploy)
+
+[Slides](https://docs.google.com/presentation/d/1uFGmgLAgxeSe85KBZDAyAb9DgJ9LqC1k4Wlm6_MQMug/edit#slide=id.p)

@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import './App.css'
-import './styles/classic.css'
-import './styles/modern.css'
 import 'react-toastify/dist/ReactToastify.css'
 import PrivateRoute from './components/droy/PrivateRoute'
 import OnlyNotLoggedRoute from './components/droy/OnlyNotLoggedRoute'
@@ -29,9 +27,12 @@ class App extends Component {
 
   componentDidMount = async () => {
     try {
+      /* Easter egg */
+      console.log('Hello! 👋 We are delighted that you are inspecting 🔎 our project. If you have any questions ❓, suggestions 🤔 or compliments 💖, do not hesitate to contact us 📧: Marta Mullor (marta.mullor.polo@gmail.com) and Marc Serra (mserrahidalgo@gmail.com) 😊🚀')
       firebase.auth().onAuthStateChanged((user) => {
         this.setState({ authLoading: false })
       });
+
     } catch (error) {
       console.error(error)
     }
@@ -39,8 +40,6 @@ class App extends Component {
 
   render() {
     const { authLoading } = this.state
-    /* Easter egg */
-    console.log('Hello! 👋 We are delighted that you are inspecting 🔎 our project. If you have any questions ❓, suggestions 🤔 or compliments 💖, do not hesitate to contact us 📧: Marta Mullor (marta.mullor.polo@gmail.com) and Marc Serra (mserrahidalgo@gmail.com) 😊🚀')
     return (
       <div>
         {!authLoading

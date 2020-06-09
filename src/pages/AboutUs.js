@@ -78,13 +78,13 @@ class AboutUs extends Component {
                         <div className='opinions-container'>
                             <div className='opinion-container'>
                                 <h4 className='name-opinion'>Jorge de Juana</h4>
-                                <p className='text-section-icon'>"Drag and drop blocks and build websites in mere minutes!
-                                This is definitely one of the easiest software solution for website building."</p>
+                                <p className='text-section-icon'>Drag and drop blocks and build websites in mere minutes!
+                                This is definitely one of the easiest software solution for website building.</p>
                             </div>
                             <div className='opinion-container'>
                                 <h4 className='name-opinion'>Edu Carmona</h4>
-                                <p className='text-section-icon'>"Droy Website Builder looks great, is genuinely easy to use, 
-                                and allows you to build stylish and attractive websites with no hassles at all."</p>
+                                <p className='text-section-icon'>Droy Website Builder looks great, is genuinely easy to use, 
+                                and allows you to build stylish and attractive websites with no hassles at all.</p>
                             </div>
                         </div>
                     </ParallaxLayer>

@@ -5,7 +5,6 @@ import { withData } from '../../contexts/dataContext'
 import OptionsBar from '../droy/OptionsBar'
 import ModalChangeInfo from '../droy/ModalChangeInfo'
 import { uuid } from 'uuidv4'
-import '../../styles/user-componentBase.css'
 import firebase from '../../services/firebase'
 import alias from '../../utils/alias'
 
