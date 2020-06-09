@@ -8,7 +8,7 @@ export default class ImageEditable extends Component {
     this.refs.imageUploader.click();
   }
 
-  /* Upload an alternative photo when an error has occurred */
+  /* Show a placeholder common error photo when an error has occurred */
   handleError = (e) => {
     e.target.src = '/img/notFound.jpg'
   }

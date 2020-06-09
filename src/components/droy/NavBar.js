@@ -33,7 +33,7 @@ class NavBar extends Component {
     this.setState({ modalDeploy: false })
   }
 
-  /* Show modal deploy and send the request to the backend */
+  /* Save actual project config to deployed config and show modal deploy  */
   deployApp = async () => {
     const { projectId } = this.props
     await api.get(`/projects/${projectId}/deploy`)

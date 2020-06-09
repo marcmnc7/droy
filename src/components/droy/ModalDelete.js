@@ -19,7 +19,7 @@ export default class ModalDelete extends Component {
     });
   }
 
-  /* Delete the project in frontend and backend */
+  /* Delete the project on database and the project folder in firebase storage */
   handleDelete = async (e) => {
     try {
       e.preventDefault()

@@ -10,7 +10,7 @@ export default class ModalChangeInfo extends Component {
     }
   }
 
-  /* Catch link information and set it on the state */
+  /* Catch content changes and set it on the state */
   handleChangeNormal = (e) => {
     const infoCopy = { ...this.state.info }
     infoCopy[e.target.name] = e.target.name === "toNewPage" ? e.target.checked : e.target.value
@@ -19,7 +19,7 @@ export default class ModalChangeInfo extends Component {
     });
   }
 
-  /* Catch style information and set it on the state */
+  /* Catch style changes and set it on the state */
   handleChangeStyle = (e) => {
     const infoCopy = { ...this.state.style }
     infoCopy[e.target.name] = e.target.value
